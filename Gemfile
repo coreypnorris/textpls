@@ -27,6 +27,8 @@ group :test, :development do
   gem 'letter_opener'
   gem 'faker'
   gem 'dotenv-rails'
+  gem 'pry'
+  gem 'pry-debugger'
 end
 
 group :test do
