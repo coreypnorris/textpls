@@ -10,6 +10,7 @@ gem 'bootstrap-sass'
 gem 'bcrypt'
 gem 'devise'
 gem 'git'
+gem 'rest-client'
 
 group :development do
   gem 'better_errors'
