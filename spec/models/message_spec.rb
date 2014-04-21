@@ -9,4 +9,10 @@ describe Message, :vcr => true do
     message = Message.new(:body => 'howdy', :to => '111111', :from => '7754730713')
     message.save.should be_false
   end
+
+  it "adds an error if the number is invalid" do
+    message = Message.new(:body => 'howdy', :to => '111111', :from => '7754730713')
+    message.save
+    message.errors.should eq "something bad happened"
+  end
 end
